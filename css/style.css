@@ -6,13 +6,24 @@ Author: Surjith S M
 /* ==============================================================
    GLOBAL STYLES
    ============================================================== */
+:root {
+    --nav-color: #06c;
+    --nav-color-main: #000000;
+    --nav-color-sec: #a31539;
+    --nav-color-fill: #FFD382;
+    --dropdown-color: #fff;
+    --dropdown-hover-color: #f3fb33;
+    --white:#ffff;
+}
+
 body {
   font-family: 'Roboto', sans-serif; }
 
 h1 {
-  font-size: 72px;
-  color: #fff;
-  font-weight: 300; }
+    font-size: 72px;
+    color: var(--nav-color-main);
+    font-weight: 600;
+}
   @media (max-width: 1200px) {
     h1 {
       font-size: 52px; } }
@@ -72,7 +83,9 @@ p {
   margin: 0 auto; }
 
 .nav-menu-2 {
-  position: inherit; }
+  position: inherit; 
+  color: #000000;
+}
 
 .navbar {
   padding: .5rem 0; }
@@ -81,26 +94,26 @@ p {
   font-size: 31px; }
 
 .navbar-light .navbar-brand {
-  color: #fff; }
+  color: var(--nav-color); }
   .navbar-light .navbar-brand:hover {
-    color: #fff; }
+    color: var(--nav-color); }
 
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #fff; }
+  color: var(--nav-color); }
 
 .navbar-light .navbar-nav .active > .nav-link {
-  color: #fff; }
+  color: var(--nav-color); }
 
 .navbar-light .navbar-nav .nav-link {
   font-size: 16px;
   font-weight: 300;
-  color: #fff; }
+  color: var(--nav-color); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: #fff;
+    #color: var(--nav-color);
     outline: none; }
 
 .navbar-light .navbar-toggler {
-  color: #fff;
+  color: var(--nav-color);
   border-color: #fff; }
 
 @media (max-width: 992px) {
@@ -143,13 +156,15 @@ p {
   background: #030303; }
 
 .dropdown-item {
-  color: #aaaaaa;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
-  .dropdown-item:hover {
-    color: #fff;
-    background: none; }
+    color: var(--dropdown-color);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+    .dropdown-item:hover {
+        color: var(--dropdown-hover-color);
+        background: none;
+    }
 
 .ti-plus {
   font-size: 14px;
@@ -181,12 +196,16 @@ p {
     color: #000; }
 
 .slider-title_box {
-  text-align: center; }
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
 
 .slider-content_wrap h5 {
-  color: #909090;
-  font-weight: 400;
-  margin: 24px 0; }
+    color: var(--nav-color-sec);
+    background-color: var(--nav-color-fill);
+    font-weight: 400;
+    margin: 24px 0;
+}
 
 @media (max-width: 480px) {
   .form-wrap {
@@ -249,7 +268,7 @@ p {
   padding-right: 10px; }
 
 .slider-link {
-  color: #909090;
+  color: var(--white);
   margin: 45px 0 0;
   font-size: 19px; }
   @media (max-width: 480px) {
@@ -258,12 +277,13 @@ p {
       .slider-link a,
       .slider-link span {
         display: block; } }
-  .slider-link a {
-    color: #909090;
+.slider-link a {
+    color: var(--nav-color-fill);
     text-decoration: underline;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s; }
+    transition: 0.3s;
+}
     .slider-link a:hover {
       color: #fff; }
   .slider-link span {
