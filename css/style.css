@@ -109,7 +109,7 @@ p {
   font-weight: 300;
   color: var(--nav-color); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    #color: var(--nav-color);
+    color: var(--nav-color);
     outline: none; }
 
 .navbar-light .navbar-toggler {
