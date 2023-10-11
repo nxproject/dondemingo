@@ -13,7 +13,8 @@ Author: Surjith S M
     --nav-color-fill: #FFD382;
     --dropdown-color: #fff;
     --dropdown-hover-color: #f3fb33;
-    --white:#ffff;
+    --white: #ffff;
+    --black: #0000;
 }
 
 body {
@@ -84,7 +85,7 @@ p {
 
 .nav-menu-2 {
   position: inherit; 
-  color: #000000;
+  color: var(--white);
 }
 
 .navbar {
